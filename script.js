@@ -70,3 +70,21 @@ let even_or_odd_15 = 15;
 for (let i = 1; i <= even_or_odd_15; i += 2) {
   console.log(i);
 }
+
+// Exercice 6 : Mario Pyramid
+console.log(
+  "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+);
+let pyramide_number = 5;
+
+for (let i = 1; i <= pyramide_number; i++) {
+  let espaces = '';
+  for (let espace = 1; espace <= pyramide_number - i; espace++) {
+    espaces += ' ';
+  }
+  let blocs = '';
+  for (let bloc = 1; bloc <= i; bloc++) {
+    blocs += '#';
+  }
+  console.log(espaces + blocs);
+}
