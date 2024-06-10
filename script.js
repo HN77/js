@@ -33,7 +33,6 @@ if (age <= 18) {
 }
 
 // Exercice 3 : Digital Comparator
-
 const number_1 = 44;
 const number_2 = 44;
 const number_3 = 33;
@@ -48,4 +47,26 @@ if (number_1 === number_2 && number_2 === number_3) {
   console.log('Deux des variables sont de valeurs égales.');
 } else {
   console.log('Les trois variables sont différentes.');
+}
+
+// Exercice 4 : By Two
+let by_two_5 = 5;
+for (let i = 1; i <= by_two_5; i++) {
+  console.log(`${i} -> ${i * 2}`);
+}
+
+let by_two_3 = 3;
+for (let i = 1; i <= by_two_3; i++) {
+  console.log(`${i} -> ${i * 2}`);
+}
+
+// Exercice 5 : Even or Odd
+let even_or_odd_10 = 10;
+for (let i = 0; i <= even_or_odd_10; i += 2) {
+  console.log(i);
+}
+
+let even_or_odd_15 = 15;
+for (let i = 1; i <= even_or_odd_15; i += 2) {
+  console.log(i);
 }
