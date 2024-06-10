@@ -32,6 +32,8 @@ if (age <= 18) {
   console.log('Hey ! Vous êtes majeur !');
 }
 
+// Exercice 3 : Digital Comparator
+
 const number_1 = 44;
 const number_2 = 44;
 const number_3 = 33;
