@@ -87,3 +87,28 @@ for (let i = 1; i <= pyramide; i++) {
   let blocks = '#'.repeat(i);
   console.log(spaces + blocks);
 }
+
+// Exercice 7 : Happy birthday
+function birthday() {
+  let birthday_split = prompt('Quel est ton anniversaire ?');
+  let [birthday_day, birthday_month, birthday_year] = birthday_split.split('/');
+
+  let current_date = new Date();
+  let current_day = current_date.getDate();
+  let current_month = current_date.getMonth() + 1;
+  let current_year = current_date.getFullYear();
+
+  if (
+    birthday_day == current_day &&
+    birthday_month == current_month &&
+    birthday_year == current_year
+  ) {
+    console.log(
+      'Joyeux anniversaire ! Tu obtiens une promotion de 30% sur tous les articles !'
+    );
+  } else {
+    console.log('En ce moment, une promotion de 15% sur tous les articles');
+  }
+}
+
+birthday();
