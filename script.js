@@ -1,5 +1,4 @@
 // Exercice 1 : Chat Simulator
-
 const firstname_1 = 'Stella';
 const firstname_2 = 'Marcus';
 const day_state_1 = 'Très bien';
@@ -26,7 +25,6 @@ const age = 21;
 if (age <= 18) {
   console.log('Vous êtes mineur');
 } else if (age >= 21) {
-  console.log('Hey ! Vous êtes majeur !');
   console.log('Vous avez atteint la majorité internationale.');
 } else {
   console.log('Hey ! Vous êtes majeur !');
@@ -51,8 +49,13 @@ if (number_1 === number_2 && number_2 === number_3) {
 
 // Exercice 4 : By Two
 let by_two_5 = 5;
-for (let i = 1; i <= by_two_5; i++) {
-  console.log(`${i} -> ${i * 2}`);
+
+if (by_two_5 < 5) {
+  for (let i = 1; i <= by_two_5; i++) {
+    console.log(`${i} -> ${i * 2}`);
+  }
+} else {
+  console.log('Vous êtes trop gourmand...');
 }
 
 let by_two_3 = 3;
@@ -62,8 +65,13 @@ for (let i = 1; i <= by_two_3; i++) {
 
 // Exercice 5 : Even or Odd
 let even_or_odd_10 = 10;
-for (let i = 0; i <= even_or_odd_10; i += 2) {
-  console.log(i);
+
+if (even_or_odd_10 > 10) {
+  for (let i = 0; i <= even_or_odd_10; i += 2) {
+    console.log(i);
+  }
+} else {
+  console.log('Vous êtes trop gourmand...');
 }
 
 let even_or_odd_15 = 15;
@@ -72,19 +80,10 @@ for (let i = 1; i <= even_or_odd_15; i += 2) {
 }
 
 // Exercice 6 : Mario Pyramid
-console.log(
-  "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-);
-let pyramide_number = 5;
+const pyramide = 5;
 
-for (let i = 1; i <= pyramide_number; i++) {
-  let espaces = '';
-  for (let espace = 1; espace <= pyramide_number - i; espace++) {
-    espaces += ' ';
-  }
-  let blocs = '';
-  for (let bloc = 1; bloc <= i; bloc++) {
-    blocs += '#';
-  }
-  console.log(espaces + blocs);
+for (let i = 1; i <= pyramide; i++) {
+  let spaces = ' '.repeat(pyramide - i);
+  let blocks = '#'.repeat(i);
+  console.log(spaces + blocks);
 }
